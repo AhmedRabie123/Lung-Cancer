@@ -1,15 +1,29 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+/* Front */ 
+
+use App\Http\Controllers\Front\HomeController;
+
+
+
+
+/* Admin */ 
+
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminProfileController;
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+/* Front Route */ 
+
+route::get('/', [HomeController::class, 'index'])->name('home');
+
 
 
 /* Admin Route */ 
