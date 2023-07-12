@@ -1,0 +1,1 @@
+<script src="{{ asset('dist-front/js/home.js') }}"></script>
