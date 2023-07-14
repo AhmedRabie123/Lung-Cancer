@@ -100,4 +100,78 @@ class AdminPageController extends Controller
         return redirect()->route('admin_home')->with('success', 'Sign In Patient Page Updated Successfully');
 
     }
+
+    public function doctor_forget_password()
+    {
+        $page_data = Page::where('id', 1)->first();
+        return view('Admin.page_doctor_forget_password_heading', compact('page_data'));
+        
+    }
+
+    public function doctor_forget_password_update(Request $request)
+    {
+        $page_data = Page::where('id', 1)->first();
+
+        $page_data->doctor_forget_password_heading = $request->doctor_forget_password_heading;
+        $page_data->update();
+
+        return redirect()->route('admin_home')->with('success', 'Forget Password Page Updated Successfully');
+
+    }
+
+    public function doctor_reset_password()
+    {
+        $page_data = Page::where('id', 1)->first();
+        return view('Admin.page_doctor_reset_password_heading', compact('page_data'));
+        
+    }
+
+    public function doctor_reset_password_update(Request $request)
+    {
+        $page_data = Page::where('id', 1)->first();
+
+        $page_data->doctor_reset_password_heading = $request->doctor_reset_password_heading;
+        $page_data->update();
+
+        return redirect()->route('admin_home')->with('success', 'reset Password Page Updated Successfully');
+
+    }
+
+    public function patient_forget_password()
+    {
+        $page_data = Page::where('id', 1)->first();
+        return view('Admin.page_patient_forget_password_heading', compact('page_data'));
+        
+    }
+
+    public function patient_forget_password_update(Request $request)
+    {
+        $page_data = Page::where('id', 1)->first();
+
+        $page_data->patient_forget_password_heading = $request->patient_forget_password_heading;
+        $page_data->update();
+
+        return redirect()->route('admin_home')->with('success', 'Forget Password Page Updated Successfully');
+
+    }
+
+    public function patient_reset_password()
+    {
+        $page_data = Page::where('id', 1)->first();
+        return view('Admin.page_patient_reset_password_heading', compact('page_data'));
+        
+    }
+
+    public function patient_reset_password_update(Request $request)
+    {
+        $page_data = Page::where('id', 1)->first();
+
+        $page_data->patient_reset_password_heading = $request->patient_reset_password_heading;
+        $page_data->update();
+
+        return redirect()->route('admin_home')->with('success', 'reset Password Page Updated Successfully');
+
+    }
+
+
 }

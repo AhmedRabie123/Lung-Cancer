@@ -26,6 +26,10 @@ return new class extends Migration
             $table->integer('signup_patient_status');
             $table->text('signin_patient_heading');
             $table->integer('signin_patient_status');
+            $table->text('doctor_forget_password_heading');
+            $table->text('doctor_reset_password_heading');
+            $table->text('patient_forget_password_heading');
+            $table->text('patient_reset_password_heading');
             $table->timestamps();
         });
     }

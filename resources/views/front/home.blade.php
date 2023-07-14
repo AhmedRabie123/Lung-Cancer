@@ -28,16 +28,16 @@
                 <img src="{{ asset('uploads/OIP (2).jfif') }}" class="d-block w-100 img2-carousel" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Join Us My Friend</h5>
-                    <p>Staying healthy just got simpler. Create a Patient Online Services account.<a
-                            href="test3.html">SignUp</a></p>
+                    {{-- <p>Staying healthy just got simpler. Create a Patient Online Services account.<a
+                            href="test3.html">SignUp</a></p> --}}
                 </div>
             </div>
             <div class="carousel-item  ">
                 <img src="{{ asset('uploads/OIP.jpg') }}" class="d-block w-100 img3-carousel" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welcome Our Fighter</h5>
-                    <p>Connecting to your care is easy. Log in to Patient Online Services.<a
-                            href="login-patient.html">LogIn</a></p>
+                    {{-- <p>Connecting to your care is easy. Log in to Patient Online Services.<a
+                            href="login-patient.html">LogIn</a></p> --}}
                 </div>
             </div>
         </div>
