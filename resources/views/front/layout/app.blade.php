@@ -19,7 +19,7 @@
     @include('front.layout.nav')
 
 
-    @if ($global_page_data->heading_status == 1 && Route::is('home') || Route::is('doctor_login'))
+    @if ($global_page_data->heading_status == 1 && Route::is('home') || Route::is('health'))
         <h2 class="h2_home">{{ $global_page_data->short_heading }}</h2>
         <div>
             <p class="para_home">{!! $global_page_data->heading !!}</p>

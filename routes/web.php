@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Route;
 /* Front */
 
 use App\Http\Controllers\Front\HomeController;
+use App\Http\Controllers\Front\HealthController;
+use App\Http\Controllers\Front\DiagnosisController;
+use App\Http\Controllers\Front\SupportController;
+use App\Http\Controllers\Front\MedicalController;
+use App\Http\Controllers\Front\ApplicationController;
 
 
 
@@ -34,6 +39,13 @@ use App\Http\Controllers\Patient\PatientProfileController;
 /* Front Route */
 
 route::get('/', [HomeController::class, 'index'])->name('home');
+route::get('/health', [HealthController::class, 'index'])->name('health');
+route::get('/diagnosis', [DiagnosisController::class, 'index'])->name('diagnosis');
+route::get('/test-cancer', [DiagnosisController::class, 'test_cancer'])->name('test_cancer');
+route::get('/patient-support', [SupportController::class, 'index'])->name('patient_support');
+route::get('/patient-medical', [MedicalController::class, 'index'])->name('patient_medical');
+route::get('/doctor-application', [ApplicationController::class, 'application'])->name('doctor_application');
+route::get('/doctor-resource', [ApplicationController::class, 'resource'])->name('doctor_resource');
 
 
 

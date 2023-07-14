@@ -1,151 +1,161 @@
-
-.navbar-nav{
+.navbar-nav {
     display: flex;
     justify-content: space-between;
 }
-.navbar{
+
+.navbar {
     background-color: steelblue;
     display: flex;
     justify-content: center;
     position: fixed;
 }
-.navbar-brand{
-  color: black !important;
+
+.navbar-brand {
+    color: black !important;
 }
-.container-fluid{
+
+.container-fluid {
     color: black !important;
     background-color: steelblue;
-    
 }
-.collapse{
+
+.collapse {
     display: flex;
     justify-content: center;
     margin-right: 5%;
 }
 
-.icon_app{
-    width:35px ;
+.icon_app {
+    width: 35px;
     height: 35px;
-     
 }
-.nav-item{
+
+.nav-item {
     padding-left: 50px;
     color: black;
 }
+
 .nav-link {
     color: black !important;
 }
-.carouselhome{
-  width: 50% !important;
-  height: 20% ;
-  margin-left: 25%;
-  margin-top: 5%;
+
+.carouselhome {
+    width: 50% !important;
+    height: 20%;
+    margin-left: 25%;
+    margin-top: 5%;
 }
 
-.h2_home{
+.h2_home {
     margin-top: 5%;
     padding-left: 30%;
 }
-.para_home{
+
+.para_home {
     padding-left: 30%;
 }
-.img_home{
+
+.img_home {
     padding-left: 31%;
- 
 }
-.img1-carousel{
-  height: 20% !important;
+
+.img1-carousel {
+    height: 20% !important;
 }
-.img2-carousel{
-  height: 20% !important;
+
+.img2-carousel {
+    height: 20% !important;
 }
-.img3-carousel{
-  width: 80% !important;
-  height: 20% !important;
+
+.img3-carousel {
+    width: 80% !important;
+    height: 20% !important;
 }
+
+
 /* ---------------page login-----------------*/
 
 body {
     background-color: #f2f2f2;
-   }
-   
-   .login-box {
+}
+
+.login-box {
     margin: 100px auto;
     max-width: 400px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-   }
-   
-   .login-box h1 {
+}
+
+.login-box h1 {
     font-size: 32px;
     margin-bottom: 30px;
-   }
-   .h1_login{
-    color:steelblue ;
-   }
-   
-   .login-box label {
+}
+
+.h1_login {
+    color: steelblue;
+}
+
+.login-box label {
     display: block;
     margin-bottom: 10px;
-   }
-   .label_login{
+}
+
+.label_login {
     padding-right: 75%;
-    color:steelblue ;
-   }
-   
-   .login-box input[type="text"],
-   .login-box input[type="password"] {
-    width: 100%; 
+    color: steelblue;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-   }
-   
-   .login-box input[type="submit"] {
+}
+
+.login-box input[type="submit"] {
     background-color: steelblue;
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-   }
+}
 
-   
-   .login-box input[type="submit"]:hover {
+.login-box input[type="submit"]:hover {
     background-color: rgb(29, 83, 127);
-   }
+}
+
+
 /* ---------------page signup-----------------*/
 
-  
- 
-  
-  .h2_signup{
+.h2_signup {
     color: steelblue;
     margin-bottom: 5%;
     text-align: center;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
     margin-bottom: 10px;
     padding: 10px;
-    margin-top:10px ;
-  }
-  
-  button[type="submit"] {
+    margin-top: 10px;
+}
+
+button[type="submit"] {
     background-color: steelblue;
     border: none;
     border-radius: 3px;
@@ -155,30 +165,33 @@ body {
     margin-top: 10px;
     padding: 10px;
     margin-bottom: 10px;
-    
-  }
-  
-  button[type="submit"]:hover {
+}
+
+button[type="submit"]:hover {
     background-color: rgb(29, 83, 127);
-  }
-  
-  input:focus {
+}
+
+input:focus {
     outline: none;
     border-color: steelblue;
-  }
-  .sign-con1{
+}
+
+.sign-con1 {
     display: flex;
     justify-content: space-around;
-  }
-  .signimg1{
+}
+
+.signimg1 {
     margin-top: 40px;
     width: 60%;
     height: 60%;
-  }
-  .signup11{
+}
+
+.signup11 {
     padding-left: 50px;
-  }
-  .signup-form1{
+}
+
+.signup-form1 {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -187,36 +200,44 @@ body {
     padding: 20px;
     margin-top: 100px;
     margin: 50px auto;
-  }
-  .signup2{
+}
+
+.signup2 {
     margin-left: 100px;
     color: steelblue;
-  }
-  .signupp2{
+}
+
+.signupp2 {
     color: black;
-  }
-  .signup1{
+}
+
+.signup1 {
     margin-left: 100px;
     color: steelblue;
-  }
-  .signupp1{
+}
+
+.signupp1 {
     color: black;
-  }
-  .sign-con3{
+}
+
+.sign-con3 {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px ;
-  }
-  .signimg33{
+    margin-bottom: 50px;
+}
+
+.signimg33 {
     padding-right: 50px;
     margin-top: 100px;
     width: 120%;
     height: 80%;
-  }
-  .signimg3{
+}
+
+.signimg3 {
     margin-left: 50px;
-  }
-  .signup-form2{
+}
+
+.signup-form2 {
     margin-right: 20%;
     background-color: #ececec;
     border-radius: 5px;
@@ -226,202 +247,247 @@ body {
     padding: 20px;
     margin-top: 100px;
     backdrop-filter: blur(5px);
-  }
-  .signupp{
-    margin-top: 50px;
-  }
+}
 
-  /*  main login */
-  .card_login{
+.signupp {
+    margin-top: 50px;
+}
+
+
+/*  main login */
+
+.card_login {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
-  }
-  .card-login{
+}
+
+.card-login {
     width: 20rem;
-  }
-  /*profilepatient page*/
-  .con-patientprofile1{
+}
+
+
+/*profilepatient page*/
+
+.con-patientprofile1 {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
-  }
-  .head-patientprofile{
+}
+
+.head-patientprofile {
     margin-top: 20px;
     margin-left: 30rem;
     color: rgb(19, 84, 137);
-  }
-  .con-patientprofile2{
+}
+
+.con-patientprofile2 {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-  .head2-patientprofile{
+}
+
+.head2-patientprofile {
     margin-top: 30px;
     margin-left: 20rem;
     color: rgb(19, 84, 137);
-  }
-  .img1-patientprofile{
+}
+
+.img1-patientprofile {
     margin-top: 50px;
     margin-left: 35rem;
-  }
-  .img2-patientprofile{
+}
+
+.img2-patientprofile {
     margin-top: 50px;
     margin-left: 35rem;
-  }
-  .head3-profilepatient{
+}
+
+.head3-profilepatient {
     color: rgb(19, 84, 137) !important;
     margin-bottom: 50px;
     margin-left: 1%;
-  }
-  /* profile doctor page*/
-.head-profiledoctor1{
-  margin-top: 20px;
-  margin-left: 25rem;
-  color: rgb(19, 84, 137);
-}
-.head-profiledoctor2{
-  margin-top: 20px;
-  margin-left: 5rem;
-  color: rgb(19, 84, 137);
-}
-.para-profiledoctor{
-  margin-top: 20px;
-  font-size: 20px;
-  margin-left: 3rem;
-}
-/*afterloginpage*/
-.nav-afterloginpatient{
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  background-color: steelblue;
-  color: white !important;
-  height: 50px;
-  align-items: center;
-  
-}
-.navlink-after{
-  color: white !important;
-  text-decoration: none;
 }
 
-.div-appointment{
-  margin-top: 50px;
-  display: none;
+
+/* profile doctor page*/
+
+.head-profiledoctor1 {
+    margin-top: 20px;
+    /* margin-left: 25rem; */
+    color: rgb(19, 84, 137);
 }
-.head-afterloginpatient{
-  margin-left: 5%;
-  color: steelblue;
+
+.head-profiledoctor2 {
+    margin-top: 20px;
+    margin-left: 5rem;
+    color: rgb(19, 84, 137);
 }
-.form-afterloginpatient{
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 30px;
+
+.para-profiledoctor {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 3rem;
 }
-.headform-afterloginpatient{
-  margin-top: 15px;
-  margin-bottom: 25px;
+
+
+/*afterloginpage*/
+
+.nav-afterloginpatient {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: steelblue;
+    color: white !important;
+    height: 50px;
+    align-items: center;
 }
-.button-afterloginpatient{
-  background-color: steelblue;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 35px;
+
+.navlink-after {
+    color: white !important;
+    text-decoration: none;
+    padding-left: 202px;
 }
+
+.div-appointment {
+    margin-top: 50px;
+    display: none;
+}
+
+.head-afterloginpatient {
+    margin-left: 5%;
+    color: steelblue;
+}
+
+.form-afterloginpatient {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+
+.headform-afterloginpatient {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.button-afterloginpatient {
+    background-color: steelblue;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+
 /*after login doctor*/
-.nav-afterlogindoctor{
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  background-color: steelblue;
-  color: white !important;
-  height: 50px;
-  align-items: center;
+
+.nav-afterlogindoctor {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: steelblue;
+    color: white !important;
+    height: 50px;
+    align-items: center;
 }
-.cardscontainer{
-  margin-top: 5%;
-  margin-left: 20%;
-  display: none;
+
+.cardscontainer {
+    margin-top: 5%;
+    margin-left: 20%;
+    /* display: none; */
 }
-.cardtitleafter{
-  color: steelblue;
-  font-weight: bold;
+
+.cardtitleafter {
+    color: steelblue;
+    font-weight: bold;
 }
-.cardlink{
-  
-  color: rgb(0, 126, 228) !important;
+
+.cardlink {
+    color: rgb(0, 126, 228) !important;
 }
+
+
 /*medication of patient*/
-.head-medication{
-  color: steelblue;
-  margin-top: 3%;
-  margin-left: 1%;
-  margin-bottom: 3%;
+
+.head-medication {
+    color: steelblue;
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-bottom: 3%;
 }
-.head2-medication{
-  width: 75%;
-  margin-left: 4%;
-  background-color: #e7eef5;
-  margin-bottom: 4%;
+
+.head2-medication {
+    width: 75%;
+    margin-left: 4%;
+    background-color: #e7eef5;
+    margin-bottom: 4%;
 }
-.para-medication{
-  color: #3f4156;
+
+.para-medication {
+    color: #3f4156;
 }
+
+
 /*test diagnosis*/
-.testdiagnosis-head1{
-  margin-top: 5%;
-  color: steelblue;
-  margin-left: 1%;
+
+.testdiagnosis-head1 {
+    margin-top: 5%;
+    color: steelblue;
+    margin-right: 200px;
+    text-align: center!important;
 }
-.testdiagnosis-head2{
-  color: slategray;
-  margin-left: 2%;
+
+.testdiagnosis-head2 {
+    color: slategray;
+    margin-left: 2%;
 }
-.testdiagnosis-consymptoms{
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 4%;
+
+.testdiagnosis-consymptoms {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4%;
 }
-.testdiagnosis-symptomsbutton{
-  background-color: steelblue;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  
+
+.testdiagnosis-symptomsbutton {
+    background-color: steelblue;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.testdiagnosis-symptomsbutton:hover{
-  background-color: rgb(29, 83, 127);
+
+.testdiagnosis-symptomsbutton:hover {
+    background-color: rgb(29, 83, 127);
 }
-#test-diagnosis-main-con{
-  margin-top: 5%;
-  
+
+#test-diagnosis-main-con {
+    margin-top: 5%;
 }
-.testdiagnosis-para{
-  font-size: 20px;
+
+.testdiagnosis-para {
+    font-size: 20px;
 }
-.testdiagnosis-con1{
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 3%;
-  margin-left: 15%;
-  margin-right: 15%;
+
+.testdiagnosis-con1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
-.testdiagnosis-label{
-  font-size: 25px;
-  text-align: start;
-  
+
+.testdiagnosis-label {
+    font-size: 25px;
+    text-align: start;
 }
-.testdiagnosis-submitbutton{
-  background-color: steelblue;
+
+.testdiagnosis-submitbutton {
+    background-color: steelblue;
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -432,6 +498,7 @@ body {
     margin-bottom: 5%;
     margin-left: 50%;
 }
-.testdiagnosis-submitbutton:hover{
-  background-color: rgb(29, 83, 127);
+
+.testdiagnosis-submitbutton:hover {
+    background-color: rgb(29, 83, 127);
 }
