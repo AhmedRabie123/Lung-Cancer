@@ -20,6 +20,7 @@ use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminProfileController;
 use App\Http\Controllers\Admin\AdminPageController;
+use App\Http\Controllers\Admin\AdminSliderController;
 
 
 /* Doctor */
@@ -146,4 +147,12 @@ route::group(['middleware' => ['admin:admin']], function () {
     route::post('/admin/page/patient/reset-password/update', [AdminPageController::class, 'patient_reset_password_update'])->name('admin_patient_reset_password_submit');
 
 
+    /* Admin Slider Route */
+
+    route::get('admin/slider-view', [AdminSliderController::class, 'index'])->name('admin_slider_view');
+    route::get('admin/slider-create', [AdminSliderController::class, 'slider_create'])->name('admin_slider_create');
+    route::post('admin/slider-store', [AdminSliderController::class, 'slider_store'])->name('admin_slider_store');
+    route::get('admin/slider-edit/{id}', [AdminSliderController::class, 'slider_edit'])->name('admin_slider_edit');
+    route::post('admin/slider-update/{id}', [AdminSliderController::class, 'slider_update'])->name('admin_slider_update');
+    route::get('admin/slider-delete/{id}', [AdminSliderController::class, 'slider_delete'])->name('admin_slider_delete');
 });
