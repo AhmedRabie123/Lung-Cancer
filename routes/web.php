@@ -10,6 +10,8 @@ use App\Http\Controllers\Front\DiagnosisController;
 use App\Http\Controllers\Front\SupportController;
 use App\Http\Controllers\Front\MedicalController;
 use App\Http\Controllers\Front\ApplicationController;
+use App\Http\Controllers\Front\AboutController;
+use App\Http\Controllers\Front\ContactController;
 
 
 
@@ -41,6 +43,9 @@ use App\Http\Controllers\Patient\PatientProfileController;
 
 route::get('/', [HomeController::class, 'index'])->name('home');
 route::get('/health', [HealthController::class, 'index'])->name('health');
+route::get('/about', [AboutController::class, 'index'])->name('about');
+route::get('/contact', [ContactController::class, 'index'])->name('contact');
+route::post('/contact/send-email', [ContactController::class, 'send_email'])->name('contact_send_email');
 route::get('/diagnosis', [DiagnosisController::class, 'index'])->name('diagnosis');
 route::get('/test-cancer', [DiagnosisController::class, 'test_cancer'])->name('test_cancer');
 route::get('/patient-support', [SupportController::class, 'index'])->name('patient_support');
@@ -118,6 +123,12 @@ route::group(['middleware' => ['admin:admin']], function () {
     route::post('/admin/edit-profile-submit', [AdminProfileController::class, 'profile_submit'])->name('admin_profile_submit');
 
     route::get('/admin/home', [AdminHomeController::class, 'index'])->name('admin_home');
+
+    route::get('/admin/page/contact', [AdminPageController::class, 'contact'])->name('admin_page_contact');
+    route::post('/admin/page/contact/update', [AdminPageController::class, 'contact_update'])->name('admin_page_contact_update');
+
+    route::get('/admin/page/about', [AdminPageController::class, 'about'])->name('admin_page_about');
+    route::post('/admin/page/about/update', [AdminPageController::class, 'about_update'])->name('admin_page_about_update');
 
     route::get('/admin/page/heading', [AdminPageController::class, 'heading'])->name('admin_heading');
     route::post('/admin/page/heading/update', [AdminPageController::class, 'heading_update'])->name('admin_heading_submit');

@@ -13,13 +13,22 @@
                     href="{{ route('admin_home') }}"><i class="fas fa-hand-point-right"></i>
                     <span>Dashboard</span></a></li>
 
-                    <li class="{{ Request::is('admin/slider-view') ? 'active' : '' }}"><a class="nav-link"
-                        href="{{ route('admin_slider_view') }}"><i class="fas fa-hand-point-right"></i> <span>slider Section</span></a>
-                </li>
-    
+            <li class="{{ Request::is('admin/slider-view') ? 'active' : '' }}"><a class="nav-link"
+                    href="{{ route('admin_slider_view') }}"><i class="fas fa-hand-point-right"></i> <span>slider
+                        Section</span></a>
+            </li>
+
+            <li class="{{ Request::is('admin/page/about') ? 'active' : '' }}"><a class="nav-link"
+                    href="{{ route('admin_page_about') }}"><i class="fas fa-hand-point-right"></i> <span>About
+                        Section</span></a>
+            </li>
+
+            <li class="{{ Request::is('admin/page/contact') ? 'active' : '' }}"><a class="nav-link"
+                href="{{ route('admin_page_contact') }}"><i class="fas fa-hand-point-right"></i>
+                Contact Page</a></li>
 
             <li class="{{ Request::is('admin/page/heading') ? 'active' : '' }}"><a class="nav-link"
-                    href="{{ route('admin_heading') }}"><i class="fas fa-angle-right"></i>
+                    href="{{ route('admin_heading') }}"><i class="fas fa-hand-point-right"></i>
                     Heading Page</a></li>
 
             <li

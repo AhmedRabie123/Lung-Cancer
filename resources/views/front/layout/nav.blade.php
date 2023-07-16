@@ -66,6 +66,12 @@
                             <a class="nav-link " href="{{ route('health') }}">Health</a>
                         </li>
 
+                       
+                            <li class="nav-item">
+                                <a class="nav-link " href="{{ route('about') }}">About</a>
+                            </li>
+                     
+
                         @if (!Auth::guard('patient')->check())
                             {{-- @if ($global_page_data->signup_doctor_status == 1)
                             <li class="nav-item">
@@ -120,6 +126,14 @@
                             <a class="nav-link" href="{{ route('patient_login') }}">LogIn As Pnt</a>
                         </li>
                     @endif --}}
+
+                    @if ($global_page_data->contact_status == 1)
+                        <li class="nav-item">
+                            <a class="nav-link " href="{{ route('contact') }}">Contact Us</a>
+                        </li>
+                    @endif
+                 
+
                         @else
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('doctor_home') }}">Dashboard</a>
